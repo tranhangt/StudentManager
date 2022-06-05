@@ -10,9 +10,7 @@ import javax.validation.constraints.NotBlank;
 public class SinhVien {
 	@Id
 	private String maSV;
-	@NotBlank(message = "Last Name is required")
-	private String hoSV;
-	@NotBlank(message = "First Name is required")
+	@NotBlank(message = "Full Name is required")
 	private String tenSV;
 	@NotBlank(message = "Email is required")
 	private String emailSV;

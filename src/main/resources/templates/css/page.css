@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  background-color: white;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+header .logo {
+  margin: auto;
+  font-weight: bold;
+  font-size: x-large;
+  color: #253356;
+  cursor: pointer;
+}
+
+header nav ul {
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+header nav ul li {
+  margin: auto;
+}
+
+header nav ul li:hover {
+  background-color: #e2e2e2;
+}
+
+header nav ul a {
+  margin: 0;
+  padding: 2em 2em;
+  font-size: 1.1rem;
+  color: black;
+  display: block;
+}
+
+header nav ul .select {
+  border-bottom: 0.2rem solid #121429;
+}
+
+header a {
+  margin: auto;
+}
+
+header a svg {
+  margin: auto;
+  width: 2em;
+  cursor: pointer;
+}
+
+header a svg path {
+  fill: #121429;
+}
+
+section.home-content {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 9em;
+  -ms-grid-columns: 27% 50% 20%;
+      grid-template-columns: 27% 50% 20%;
+}
+
+section.home-content .title h1 {
+  color: #121429;
+  font-size: 3rem;
+}
+
+section.home-content .title p {
+  color: #253356;
+}
+
+section.content {
+  margin: 0;
+  margin-top: 10em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 70%;
+      grid-template-columns: 20% 70%;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+  row-gap: 1em;
+}
+
+section.content .icon {
+  margin: auto;
+  padding: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% auto;
+      grid-template-columns: 65% auto;
+}
+
+section.content .icon svg {
+  width: 3em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+section.content .icon svg path {
+  fill: #121429;
+}
+
+section.content .title {
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+section.content .title p {
+  color: #121429;
+  margin: 0;
+  margin-left: 1em;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+section.content .table {
+  margin: auto;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+section.content .table .table-content {
+  width: auto;
+  min-width: 89%;
+  max-width: 89%;
+  table-layout: fixed;
+  margin: 0;
+  margin-left: 3em;
+}
+
+section.content .table .table-content th {
+  color: white;
+  background-color: #253356;
+  border: 0.1rem solid #121429;
+}
+
+section.content .table .table-content td {
+  text-align: center;
+  border: 0.1rem solid #121429;
+}
+
+section.content .infor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 1em;
+}
+
+section.content .infor .read-only {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+section.content .infor .read-only div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+section.content .infor .write-able {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  row-gap: 1em;
+}
+
+section.content .infor .write-able div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto 20%;
+      grid-template-columns: 20% auto 20%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+section.content .infor .write-able div form {
+  margin: auto;
+}
+
+section.content .infor .write-able div form input[type=text],
+section.content .infor .write-able div form input[type=password] {
+  padding: 0 1em;
+  font-size: 1rem;
+  text-align: center;
+  color: #121429;
+  border-color: #121429;
+  border-width: 0.1rem;
+  border-radius: 1rem;
+}
+
+section.content .infor .write-able div form input[type=text]:-moz-read-only,
+section.content .infor .write-able div form input[type=password]:-moz-read-only {
+  background-color: #b0afe2;
+}
+
+section.content .infor .write-able div form input[type=text]:read-only,
+section.content .infor .write-able div form input[type=password]:read-only {
+  background-color: #b0afe2;
+}
+
+section.content .infor .write-able div form input[type=text]:-moz-read-only:hover,
+section.content .infor .write-able div form input[type=password]:-moz-read-only:hover {
+  cursor: default;
+}
+
+section.content .infor .write-able div form input[type=text]:read-only:hover,
+section.content .infor .write-able div form input[type=password]:read-only:hover {
+  cursor: default;
+}
+
+section.content .infor .write-able div form input[type=button] {
+  padding: 0.3em 0.6em;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #253356;
+  border: none;
+  border-radius: 1rem;
+}
+
+section.content .infor .write-able div form input[type=button]:hover {
+  background-color: #121429;
+  cursor: pointer;
+}
+
+section.content .infor p {
+  margin: auto;
+}
+
+section.content .infor h3 {
+  margin: 1em;
+}
+
+@media only screen and (max-width: 700px) {
+  .background {
+    background-position-x: 20%;
+  }
+  header {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+  }
+  header .logo {
+    padding: 0.5em 0 1em;
+  }
+  header nav {
+    padding: 0;
+  }
+  header nav ul {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+  }
+  header nav ul li {
+    margin: 0;
+  }
+  header nav ul a {
+    padding: 1em 2em;
+  }
+  header nav ul .select {
+    color: white;
+    font-weight: bold;
+    background-color: #253356;
+    border-bottom: none;
+  }
+  section.content {
+    -ms-grid-columns: 12% auto;
+        grid-template-columns: 12% auto;
+    -webkit-column-gap: 0.5em;
+            column-gap: 0.5em;
+    row-gap: 0.5em;
+  }
+  section.content .icon {
+    -ms-grid-columns: 5% auto;
+        grid-template-columns: 5% auto;
+  }
+  section.content .title p {
+    margin-left: 0.1em;
+  }
+  section.content .table .table-content {
+    margin-left: 0.3em;
+  }
+  section.content .infor {
+    row-gap: 0.5em;
+  }
+  section.content .infor .read-only {
+    -webkit-column-gap: 0.5em;
+            column-gap: 0.5em;
+  }
+  section.content .infor .write-able {
+    row-gap: 0.5em;
+  }
+  section.content .infor .write-able div form input[type=text],
+  section.content .infor .write-able div form input[type=password] {
+    margin-left: 2em;
+    padding: 0;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=page.css.map */

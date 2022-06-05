@@ -27,7 +27,7 @@ public class StudentKhoaHocController {
 	public String getKhoaHoc(Model model) {
 		List<KhoaHoc> st_khList = khRepo.findAll();
 		model.addAttribute("studentCourse", st_khList);
-		return "studentCourse";
+		return "course";
 	}
 	
 	@PostMapping("/register")

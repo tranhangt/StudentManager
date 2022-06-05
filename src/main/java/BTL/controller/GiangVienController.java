@@ -24,7 +24,7 @@ public class GiangVienController {
 	public String getTeacher(Model model) {
         List<GiangVien> gvList = gvRepo.findAll();
         model.addAttribute("listGiangVien", gvList);	//ten doi tuong
-        return "teachers";								//ten file
+        return "teacher";								//ten file
     }
 	
 	@GetMapping("/addTeacher")

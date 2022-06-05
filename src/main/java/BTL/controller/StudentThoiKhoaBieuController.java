@@ -27,7 +27,7 @@ public class StudentThoiKhoaBieuController {
 		List<ThoiKhoaBieu> st_tkbList = tkbRepo.findByMaSV(maSV);
 		List<KhoaHoc> st_khoaHoc = getKhoaHoc(st_tkbList);
 		model.addAttribute("student_tkb", st_khoaHoc);
-		return "studentSchedule";
+		return "schedule";
 	}
 	
 	private List<KhoaHoc> getKhoaHoc(List<ThoiKhoaBieu> ad_tkbList) {

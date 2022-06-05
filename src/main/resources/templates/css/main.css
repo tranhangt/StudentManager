@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background:darkslategray url('../images/main_bg.png');
+    background-size: cover;
+    color: #222A35;
+}
+
+.form_container {
+    margin: 10em 0 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    padding: .5em;
+    font-size: 3em;
+}
+
+input[type=text] {
+    border-radius: .5rem;
+    border-width:  .1rem;
+    padding: .3em .3em;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    padding: 0.2em;
+}
+
+input[type=button] {
+    margin: 2em 0 1.5em;
+    padding: .5em 1.2em;
+    background-color: #222A35;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #1b212b;
+}
+
+@media (min-width: 930px) {
+    .form_container {
+        margin: 10em 15em 0;
+    }
+}

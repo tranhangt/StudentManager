@@ -24,7 +24,7 @@ public class AdminKhoaHocController {
 	public String getCourse(Model model) {
         List<KhoaHoc> khList = khRepo.findAll();
         model.addAttribute("listKhoaHoc", khList);	//ten doi tuong
-        return "courses";								//ten file
+        return "course-admin";								//ten file
     }
 	
 	@GetMapping("/addCourse")
